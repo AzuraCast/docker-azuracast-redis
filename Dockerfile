@@ -1,3 +1,4 @@
 FROM redis:5-alpine
 
-# Placeholder Docker file to ensure the AzuraCast docker-compose file always refers to the newest supported image.
+COPY redis.conf /usr/local/etc/redis/redis.conf
+CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
