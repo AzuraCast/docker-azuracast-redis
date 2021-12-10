@@ -1,4 +1,4 @@
-FROM redis:6-alpine
+FROM redis:6.2-alpine
 
 # Update Alpine libraries
 RUN apk upgrade --no-cache
